@@ -1,0 +1,30 @@
+{
+  "name": "staynest",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "server": "node --watch src/server.ts",
+    "ts:watch": "tsc --watch --noEmit",
+    "build": "npx tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.0.1",
+    "@types/validator": "^13.15.1",
+    "morgan": "^1.10.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@tsconfig/node23": "^23.0.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.15.1",
+    "validator": "^13.15.15"
+  }
+}

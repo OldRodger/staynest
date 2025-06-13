@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Grand Royal Hotel",
+    "averagePrice": 220,
+    "description": "A luxurious 5-star hotel located in the heart of the city with panoramic skyline views.",
+    "summary": "Elegant stay in the city center."
+  },
+  {
+    "name": "Ocean Breeze Resort",
+    "averagePrice": 180,
+    "description": "Beachfront resort offering stunning sea views, spa services, and water activities.",
+    "summary": "Relax by the ocean."
+  },
+  {
+    "name": "Mountain Lodge Retreat",
+    "averagePrice": 150,
+    "description": "A peaceful lodge surrounded by forest trails and mountain air.",
+    "summary": "Perfect for a nature getaway."
+  },
+  {
+    "name": "Cityscape Inn",
+    "averagePrice": 130,
+    "description": "Modern boutique hotel close to major attractions and nightlife.",
+    "summary": "Stylish and centrally located."
+  },
+  {
+    "name": "The Riverside Manor",
+    "averagePrice": 175,
+    "description": "Charming manor by the river with vintage decor and fine dining.",
+    "summary": "Old-world charm by the water."
+  },
+  {
+    "name": "Sunset Bay Hotel",
+    "averagePrice": 200,
+    "description": "Watch unforgettable sunsets from your balcony at this cozy bayfront hotel.",
+    "summary": "Romantic sunset views."
+  },
+  {
+    "name": "Urban Nest Hotel",
+    "averagePrice": 110,
+    "description": "Budget-friendly hotel with minimalist design and great transport links.",
+    "summary": "Affordable and convenient."
+  },
+  {
+    "name": "The Highland Escape",
+    "averagePrice": 160,
+    "description": "Retreat to the hills in this rustic yet modern lodge.",
+    "summary": "Tranquility in the highlands."
+  },
+  {
+    "name": "Lagoon Paradise Resort",
+    "averagePrice": 240,
+    "description": "Luxury resort with private lagoon access and tropical gardens.",
+    "summary": "Exclusive island experience."
+  },
+  {
+    "name": "Park Avenue Suites",
+    "averagePrice": 145,
+    "description": "Comfortable suites ideal for business travelers and families.",
+    "summary": "Spacious urban comfort."
+  },
+  {
+    "name": "The Vintage House",
+    "averagePrice": 125,
+    "description": "Boutique hotel with a retro vibe and artisanal breakfast included.",
+    "summary": "Retro charm and comfort."
+  },
+  {
+    "name": "Skyline Tower Hotel",
+    "averagePrice": 210,
+    "description": "High-rise hotel with rooftop bar and panoramic views.",
+    "summary": "Live above the city."
+  },
+  {
+    "name": "Maple Leaf Lodge",
+    "averagePrice": 140,
+    "description": "Warm, wood-accented lodge near hiking and skiing areas.",
+    "summary": "Adventure-friendly lodging."
+  },
+  {
+    "name": "Coastal Breeze Inn",
+    "averagePrice": 135,
+    "description": "Chic coastal inn with fresh seafood dining and beach access.",
+    "summary": "Seaside comfort and cuisine."
+  },
+  {
+    "name": "The Sapphire Hotel",
+    "averagePrice": 190,
+    "description": "Upscale modern hotel with a full-service spa and gourmet restaurant.",
+    "summary": "Refined luxury experience."
+  },
+  {
+    "name": "Palm Garden Resort",
+    "averagePrice": 170,
+    "description": "Tropical-themed resort with lush gardens and pools.",
+    "summary": "Relax under the palms."
+  },
+  {
+    "name": "The Library Hotel",
+    "averagePrice": 120,
+    "description": "Quiet literary-themed hotel with cozy rooms and reading nooks.",
+    "summary": "For the book lover."
+  },
+  {
+    "name": "Stonebridge Hotel",
+    "averagePrice": 155,
+    "description": "Traditional hotel with modern amenities in a historic building.",
+    "summary": "Classic meets contemporary."
+  },
+  {
+    "name": "Harbor Lights Inn",
+    "averagePrice": 165,
+    "description": "Scenic harbor views with nautical-inspired decor and fresh seafood.",
+    "summary": "A stay by the sea."
+  },
+  {
+    "name": "The Ember Hotel",
+    "averagePrice": 185,
+    "description": "Stylish boutique hotel with rooftop fire pits and craft cocktails.",
+    "summary": "Cozy and contemporary."
+  }
+]
