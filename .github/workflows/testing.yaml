@@ -45,13 +45,13 @@ jobs:
         uses: actions/cache@v3
         with:
           path: node_modules
-          key: deps-node-modules-${{hashFiles('**/node_modules')}}
+          key: deps-node-modules-${{hashFiles('**/package-lock.json')}}
       - name: Install Dependencies
         if: ${{steps.cache.outputs.cache-hit != 'true'}}
         run: npm ci
       - name: Seed database
         run: node ./src/seed/index.ts --seed
       - name: Start Server
-        run: npm start & npx wait-on http://127.0.0.1:${{env.PORT}}
+        run: npm start & npx wait-on http://127.0.0.1:${{env.PORT}}/api/v1/hotels
 
 
