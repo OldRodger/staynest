@@ -1,0 +1,31 @@
+name: "Stay Nest deployment pipeline"
+on:
+  push:
+    branches:
+      - main
+      - staging
+
+env:
+  PORT: 3000
+  NODE_ENV: production
+jobs:
+  test:
+    uses: ./.github/workflows/testing.yaml
+    with:
+      server_port: ${{env.PORT}}
+      database_username: root
+      database_password: example
+      node_env: ${{env.NODE_ENV}}
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deployment
+        run: |
+          echo "Deployment started"
+    
+
+
+
+
