@@ -39,7 +39,7 @@ jobs:
       MONGO_AUTH_SOURCE: admin
     steps:
       - name: Get Code
-        run: actions/checkout@v5
+        uses: actions/checkout@v5
       - name: Cache Dependencies
         id: cache
         uses: actions/cache@v3
