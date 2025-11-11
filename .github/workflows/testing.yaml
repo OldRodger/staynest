@@ -1,0 +1,57 @@
+name: Staynest Testing
+on:
+  workflow_call:
+    inputs:
+      server_port:
+        type: number
+        description: Port to run the server on
+        required: true
+      database_username:
+        type: string
+        required: true
+      database_password:
+        type: string
+        required: true
+      node_env:
+        type: string
+        required: false
+        default: development
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: node:24
+    services:
+      database:
+        image: mongo
+        env:
+          MONGO_INITDB_ROOT_USERNAME: ${{inputs.database_username}}
+          MONGO_INITDB_ROOT_PASSWORD: ${{inputs.database_password}}
+    env:
+      PORT: ${{inputs.server_port}}
+      NODE_ENV: ${{inputs.node_env}}
+      MONGO_PROTOCOL: mongodb
+      MONGO_USERNAME: ${{inputs.database_username}}
+      MONGO_PASSWORD: ${{inputs.database_password}}
+      MONGO_CLUSTER: database
+      MONGO_DATABASE: staynest
+      MONGO_AUTH_SOURCE: admin
+    steps:
+      - name: Get Code
+        run: actions/checkout@v5
+      - name: Cache Dependencies
+        id: cache
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: deps-node-modules-${{hashFiles('**/node_modules')}}
+      - name: Install Dependencies
+        if: ${{steps.cache.outputs.cache-hit != 'true'}}
+        run: npm ci
+      - name: Seed database
+        run: node ./src/seed/index.ts --seed
+      - name: Start Server
+        run: npm run server & npx wait-on http://127.0.0.1:${{env.PORT}}
+
+
