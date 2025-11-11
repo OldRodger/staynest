@@ -41,7 +41,7 @@ async function importData() {
     } catch (error) {
         console.error(error);
     }
-    process.exit(1);
+    process.exit(0);
 }
 
 async function deleteData() {
@@ -52,7 +52,7 @@ async function deleteData() {
     } catch (error) {
         console.error(error);
     }
-    process.exit(1);
+    process.exit(0);
 }
 
 const command = process.argv.at(-1)?.toLowerCase();
