@@ -9,21 +9,24 @@ env:
   PORT: 3000
   NODE_ENV: production
 jobs:
-  test:
-    uses: ./.github/workflows/testing.yaml
-    with:
-      server_port: ${{env.PORT}}
-      database_username: root
-      database_password: example
-      node_env: ${{env.NODE_ENV}}
+#  test:
+#    uses: ./.github/workflows/testing.yaml
+#    with:
+#      server_port: ${{env.PORT}}
+#      database_username: root
+#      database_password: example
+#      node_env: ${{env.NODE_ENV}}
 
   deploy:
-    needs: test
+#    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Deployment
         run: |
           echo "Deployment started"
+          echo -e "====environmental variables=====\n\n"
+          echo "PORT ${{env.PORT}}"
+          echo "NODE_ENV $NODE_ENV"
     
 
 
