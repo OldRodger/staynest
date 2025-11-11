@@ -10,4 +10,6 @@ RUN npm i
 
 COPY . .
 
-CMD ["npm", "server"]
+EXPOSE 80
+
+CMD ["npm", "run", "server"]
