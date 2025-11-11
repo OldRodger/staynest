@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "start": "node src/server.ts",
     "server": "node --watch src/server.ts",
     "ts:watch": "tsc --watch --noEmit",
     "build": "npx tsc"
