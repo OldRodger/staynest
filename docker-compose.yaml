@@ -1,0 +1,10 @@
+services:
+  backend:
+    build: .
+    image: stay_nest
+    ports:
+      - "80:80"
+    env_file:
+      - ./.env
+
+
